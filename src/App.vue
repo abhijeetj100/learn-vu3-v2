@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
-import SampleVue from "./components/SampleComponent.vue";
+import SampleComponent from "./components/SampleComponent.vue";
 </script>
 
 <template>
@@ -16,7 +16,7 @@ import SampleVue from "./components/SampleComponent.vue";
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <SampleVue />
+      <SampleComponent msg="Message from parent as prop!!!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
